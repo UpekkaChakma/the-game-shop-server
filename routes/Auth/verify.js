@@ -21,10 +21,12 @@ const verifyToken = (req, res, next) => {
 
 const verifyTokenAndAdmin = (req, res, next) => {
     verifyToken(req, res, async () => {
-        const foundedUser = await User.findOne({ email: req.user.email });
-        if (foundedUser.isAdmin) {
-            next();
-        } else {
+        try {
+            const foundedUser = await User.findOne({ email: req.user.email });
+            if (foundedUser.isAdmin) {
+                next();
+            }
+        } catch (error) {
             res.status(403).json("You are not allowed to do that!");
         }
     })
