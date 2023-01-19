@@ -2,8 +2,7 @@ const router = require("express").Router();
 const jwt = require("jsonwebtoken");
 const User = require("../../models/User");
 
-router.post("/getToken", (req, res) => {
-    console.log('here')
+router.post("/get-token", (req, res) => {
     try {
         const accessToken = jwt.sign(
             {

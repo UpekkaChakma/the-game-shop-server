@@ -18,7 +18,6 @@ router.patch("/add-order", verifyToken, async (req, res) => {
             { email: req.body.email },
             {
                 $addToSet: {
-                    email: req.body.email,
                     gamesList: { gameId: req.body.id }
                 }
             },
@@ -27,7 +26,7 @@ router.patch("/add-order", verifyToken, async (req, res) => {
         updatedOrder && res.status(200).json("order placed successfully")
     }
     catch (error) {
-        res.send(error)
+        res.status(500).send("failed to purchase")
     }
 })
 module.exports = router
