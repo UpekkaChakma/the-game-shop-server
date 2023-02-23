@@ -5,7 +5,7 @@ MERN app for purchasing video games.
 
 ### `ExpressJs` `Mongoose` `MongoDB` `JsonWebToken` `Dotenv` `CryptoJs` `NodeMailer`
 
-### `User Part`
+### `User Routes`
 1. User can purchase any available games.
 2. Once purchased, the same game can't be purchased again.
 3. All the data are stored to mongodb database.
@@ -13,8 +13,6 @@ MERN app for purchasing video games.
 5. Has Authentication with Firebase.
 6. Authentication methods are email-password, google and facebook. 
 
-### `Admin Part`
-1. Admin can add new game-data to mongodb database.
-2. Can edit and delete game-data.
-3. Has Admin Authentication with Firebase.
+### `Admin Routes`
+1. Admin has 3 routes for CRUD (create, update, delete) game data.
 
