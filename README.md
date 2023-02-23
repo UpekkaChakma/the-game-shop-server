@@ -18,4 +18,5 @@ MERN app for purchasing video games.
 
 ### `Authentication Routes`
 1. 1st route will create and send token back to client using JsonWebToken.
-2. 2nd route will verify token for both User and Admin and then will redirect them to different routes(admin or user) according to the verified result.
+2. 2nd route will verify token for both User and Admin.
+3. Then will redirect them to different routes(admin-routes, user-routes or block if verification fails) according to the verified result.
