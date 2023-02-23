@@ -17,6 +17,6 @@ MERN app for purchasing video games.
 1. Admin has 3 routes for CRUD (create, update, delete) game data.
 
 ### `Authentication Routes`
-1. 1st route will create and send token back to client using JsonWebToken.
+1. while 1st time login or signup, 1st auth route will generate a token using JsonWebToken and send it back to the client.
 2. 2nd route will verify token for both User and Admin.
 3. Then will redirect them to different routes(admin-routes, user-routes or block if verification fails) according to the verified result.
