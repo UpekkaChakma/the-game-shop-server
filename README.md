@@ -1,6 +1,20 @@
-# The-game-shop-backend-server
-Heroku live link: https://obscure-crag-81002.herokuapp.com
-frontend link:  https://github.com/UpekkaChakma/the-game-shop-client
-Here is live site link https://the-game-shop-upek.web.app/
-This project has a bunch of backend api about AAA games. You can call these api to show, add, delete and order games( though its fake ).
-Created with mongodb, express, nodemon, dotenv and cors.
+### `The Game Shop back-end part`
+MERN app for purchasing video games.
+
+### `See the` [Github repo](https://github.com/UpekkaChakma/the-game-shop-client) `for it's front-end part`.
+
+### `ExpressJs` `Mongoose` `MongoDB` `JsonWebToken` `Dotenv` `CryptoJs` `NodeMailer`
+
+### `User Part`
+1. User can purchase any available games.
+2. Once purchased, the same game can't be purchased again.
+3. All the data are stored to mongodb database.
+4. Can see his purchased games list.
+5. Has Authentication with Firebase.
+6. Authentication methods are email-password, google and facebook. 
+
+### `Admin Part`
+1. Admin can add new game-data to mongodb database.
+2. Can edit and delete game-data.
+3. Has Admin Authentication with Firebase.
+
