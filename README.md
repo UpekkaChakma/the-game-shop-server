@@ -18,5 +18,5 @@ MERN app for purchasing video games.
 
 ### `Authentication Part has two Routes`
 1. while first time login or signup, first auth route will generate a token using JsonWebToken and send it back to the client. The token will later be used for secure data connection. It will expire after 3 days so client has to login again after token expiration.
-2. Second route is a `middlware` that will verify token from the client (both User and Admin). Then will redirect them according to their requested route.
+2. Second route is a # `middlware` that will verify token from the client (both User and Admin). Then will redirect them according to their requested route.
 3. Will block the client from going further if verification fails.
