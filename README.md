@@ -5,7 +5,7 @@ MERN app for purchasing video games.
 
 ### `ExpressJs` `Mongoose` `MongoDB` `JsonWebToken` `Dotenv` `CryptoJs` `NodeMailer`
 
-### `User Part has Routes`
+### `User Part has four Routes`
 This routes can be used for-
 1. To get all video games data.
 2. Find a single game data.
